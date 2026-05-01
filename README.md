@@ -11,4 +11,5 @@ Converts Telekom Slovenije's NEO TV EPG data to [XMLTV](https://wiki.xmltv.org/)
 ## Usage
 
 ```bash
-python3 NeoEpgGrabber.py --ids channel_ids.txt --output epg.xmltv
+uv run NeoEpgGrabber.py --ids channel_ids.txt --output epg.xmltv
+```

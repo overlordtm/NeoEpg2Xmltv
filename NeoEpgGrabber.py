@@ -16,6 +16,80 @@ logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
 
 API_BASE_URL = "https://stargate.telekom.si/api/titan.tv"
+
+# Maps Slovenian API genres to Jellyfin-recognised English XMLTV categories.
+# Only genres with a clear match are listed; unmapped genres are kept SL-only.
+SL_TO_EN_CATEGORY: Dict[str, str] = {
+    # Movie
+    'akcija': 'Movie',
+    'animirani': 'Movie',
+    'drama': 'Movie',
+    'domišljijski': 'Movie',
+    'fantazijski': 'Movie',
+    'grozljivka': 'Movie',
+    'komedija': 'Movie',
+    'kriminalka': 'Movie',
+    'misterij': 'Movie',
+    'muzikal': 'Movie',
+    'nadnaravno': 'Movie',
+    'pustolovščina': 'Movie',
+    'romantična komedija': 'Movie',
+    'romantični': 'Movie',
+    'superheroji': 'Movie',
+    'triler': 'Movie',
+    'vestern': 'Movie',
+    'znanstvena fantastika': 'Movie',
+    # Series
+    'telenovela': 'Series',
+    'resničnostna oddaja': 'Series',
+    # Sports
+    'šport': 'Sports',
+    'atletika': 'Sports',
+    'avto-moto šport': 'Sports',
+    'bejzbol': 'Sports',
+    'biljard': 'Sports',
+    'boks': 'Sports',
+    'borilni šport': 'Sports',
+    'e-šport': 'Sports',
+    'ekstremni šport': 'Sports',
+    'golf': 'Sports',
+    'hokej': 'Sports',
+    'jadranje': 'Sports',
+    'kolesarstvo': 'Sports',
+    'konjeništvo': 'Sports',
+    'košarka': 'Sports',
+    'nogomet': 'Sports',
+    'odbojka': 'Sports',
+    'plavanje': 'Sports',
+    'plezanje': 'Sports',
+    'ragbi': 'Sports',
+    'rokomet': 'Sports',
+    'sabljanje': 'Sports',
+    'tenis': 'Sports',
+    'vodni šport': 'Sports',
+    # Kids
+    'otroška oddaja': 'Kids',
+    'otroški ali mladinski': 'Kids',
+    'risanka': 'Kids',
+    # News
+    'dnevno-informativna oddaja': 'News',
+    'informativna oddaja': 'News',
+    'pogovorna oddaja': 'News',
+    'vreme': 'News',
+    # Documentary
+    'dokumentarec': 'Documentary',
+    'družba': 'Documentary',
+    'družboslovje': 'Documentary',
+    'narava': 'Documentary',
+    'naravoslovje': 'Documentary',
+    'potovanje': 'Documentary',
+    'poljudnoznanstveno': 'Documentary',
+    'reportaža': 'Documentary',
+    'zgodovina': 'Documentary',
+    'zdravje': 'Documentary',
+    'življenjski slog': 'Documentary',
+    'znanost': 'Documentary',
+}
 HEADERS = {
     'accept': 'application/json, text/plain, */*',
     'accept-language': 'sl-SI,sl;q=0.9,en-GB;q=0.8,en;q=0.7',
@@ -75,13 +149,21 @@ def convert_program_metadata(data: Dict[str, Any], channel_id: str, tz_offset: s
     start = datetime.fromtimestamp(data.pop('show_start')).strftime('%Y%m%d%H%M%S') + f' {tz_offset}'
     stop = datetime.fromtimestamp(data.pop('show_end')).strftime('%Y%m%d%H%M%S') + f' {tz_offset}'
     genres = data.pop('genres', [])
+    categories = []
+    en_seen: set = set()
+    for genre in genres:
+        categories.append((genre, 'sl'))
+        en = SL_TO_EN_CATEGORY.get(genre)
+        if en and en not in en_seen:
+            categories.append((en, 'en'))
+            en_seen.add(en)
     return {
         'channel': channel_id,
         'title': [(data.pop('title'), 'sl')],
         'start': start,
         'stop': stop,
         'icon': [{'src': data.pop('thumbnail')}],
-        'category': [(genre, 'sl') for genre in genres],
+        'category': categories,
         'desc': [(data.pop('summary', ''), 'sl')]
     }
 
