@@ -9,7 +9,12 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
       - uses: actions/checkout@v4
@@ -17,18 +22,15 @@ jobs:
       - uses: astral-sh/setup-uv@v5
 
       - name: Generate EPG
-        run: uv run NeoEpgGrabber.py --ids channel_ids.txt --output epg.xmltv
-
-      - name: Publish to gh-pages
         run: |
-          mkdir deploy
-          cp epg.xmltv deploy/
-          cd deploy
-          git init -b gh-pages
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add epg.xmltv
-          git commit -m "EPG update $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push --force \
-            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" \
-            HEAD:gh-pages
+          mkdir dist
+          uv run NeoEpgGrabber.py --ids channel_ids.txt --output dist/epg.xmltv
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
