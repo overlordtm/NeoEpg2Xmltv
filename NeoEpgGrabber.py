@@ -109,14 +109,16 @@ def generate_epg(channel_ids: List[str], output_file: str):
         channel_info = fetch_channel_info(ch_id)
         if not channel_info:
             continue
-        writer.addChannel(convert_channel_metadata(channel_info))
+        channel_meta = convert_channel_metadata(channel_info)
+        writer.addChannel(channel_meta)
+        channel_xml_id = channel_meta['id']
 
         programs = fetch_programs(ch_id, from_ts, to_ts)
         logger.info(f"  Found {len(programs)} programs")
 
         for prog in programs:
             try:
-                writer.addProgramme(convert_program_metadata(prog, channel_info['channel_friendly_name'], tz_offset))
+                writer.addProgramme(convert_program_metadata(prog, channel_xml_id, tz_offset))
             except Exception as e:
                 logger.warning(f"  Skipping invalid program: {e}")
 
