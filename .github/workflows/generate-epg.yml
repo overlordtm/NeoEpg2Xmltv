@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir dist
           uv run NeoEpgGrabber.py --ids channel_ids.txt --output dist/epg.xmltv
+          cp neo.m3u dist/neo.m3u
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

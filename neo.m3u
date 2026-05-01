@@ -1,0 +1,752 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-id="tv-slo-1" tvg-name="TV SLO 1",TV SLO 1
+http://192.168.40.87:4022/udp/232.202.201.53:5003
+
+#EXTINF:-1 tvg-id="tv-slo-2" tvg-name="TV SLO 2",TV SLO 2
+http://192.168.40.87:4022/udp/232.202.201.54:5003
+
+#EXTINF:-1 tvg-id="planet" tvg-name="Planet",Planet
+http://192.168.40.87:4022/udp/232.202.201.55:5003
+
+#EXTINF:-1 tvg-id="pop-tv" tvg-name="POP TV",POP TV
+http://192.168.40.87:4022/udp/232.202.203.141:5003
+
+#EXTINF:-1 tvg-id="tv3-medias" tvg-name="TV3 Medias",TV3 Medias
+http://192.168.40.87:4022/udp/232.2.201.137:5003
+
+#EXTINF:-1 tvg-id="kanal-a" tvg-name="Kanal A",Kanal A
+http://192.168.40.87:4022/udp/232.202.203.142:5003
+
+#EXTINF:-1 tvg-id="nova-24-tv" tvg-name="Nova 24 TV",Nova 24 TV
+udp://@232.4.1.132:5002
+
+#EXTINF:-1 tvg-id="nova-24-tv-2" tvg-name="Nova 24 TV 2",Nova 24 TV 2
+udp://@232.4.1.139:5002
+
+#EXTINF:-1 tvg-id="top-tv" tvg-name="Top TV",Top TV
+http://192.168.40.87:4022/udp/232.4.201.9:5003
+
+#EXTINF:-1 tvg-id="planet-plus" tvg-name="Planet PLUS",Planet PLUS
+http://192.168.40.87:4022/udp/232.4.201.135:5003
+
+#EXTINF:-1 tvg-id="planet-2" tvg-name="Planet 2",Planet 2
+http://192.168.40.87:4022/udp/232.4.201.134:5003
+
+#EXTINF:-1 tvg-id="gold-tv" tvg-name="Gold TV",Gold TV
+udp://@232.4.1.164:5002
+
+#EXTINF:-1 tvg-id="discovery-channel" tvg-name="Discovery Channel",Discovery Channel
+http://192.168.40.87:4022/udp/232.2.202.135:5003
+
+#EXTINF:-1 tvg-id="animal-planet" tvg-name="Animal Planet",Animal Planet
+http://192.168.40.87:4022/udp/232.2.206.14:5003
+
+#EXTINF:-1 tvg-id="discovery-tlc" tvg-name="Discovery TLC",Discovery TLC
+http://192.168.40.87:4022/udp/232.4.203.15:5003
+
+#EXTINF:-1 tvg-id="discovery-id-xtra" tvg-name="Discovery ID Xtra",Discovery ID Xtra
+http://192.168.40.87:4022/udp/232.2.202.130:5003
+
+#EXTINF:-1 tvg-id="national-geographic" tvg-name="National Geographic",National Geographic
+http://192.168.40.87:4022/udp/232.2.206.3:5003
+
+#EXTINF:-1 tvg-id="national-geographic-wild" tvg-name="National Geographic Wild",National Geographic Wild
+http://192.168.40.87:4022/udp/232.2.203.134:5003
+
+#EXTINF:-1 tvg-id="viasat-history" tvg-name="Viasat History",Viasat History
+http://192.168.40.87:4022/udp/232.2.203.160:5003
+
+#EXTINF:-1 tvg-id="bbc-earth" tvg-name="BBC Earth",BBC Earth
+http://192.168.40.87:4022/udp/232.2.203.146:5003
+
+#EXTINF:-1 tvg-id="history-channel" tvg-name="History Channel",History Channel
+http://192.168.40.87:4022/udp/232.2.206.2:5003
+
+#EXTINF:-1 tvg-id="discovery-c-i" tvg-name="Discovery C&I",Discovery C&I
+udp://@232.2.3.59:5002
+
+#EXTINF:-1 tvg-id="da-vinci-learning" tvg-name="Da Vinci Learning",Da Vinci Learning
+http://192.168.40.87:4022/udp/232.4.203.17:5003
+
+#EXTINF:-1 tvg-id="travel-channel" tvg-name="Travel Channel",Travel Channel
+http://192.168.40.87:4022/udp/232.2.206.8:5003
+
+#EXTINF:-1 tvg-id="hgtv" tvg-name="HGTV",HGTV
+udp://@232.2.2.134:5002
+
+#EXTINF:-1 tvg-id="cbs-reality" tvg-name="CBS Reality",CBS Reality
+http://192.168.40.87:4022/udp/232.4.202.21:5003
+
+#EXTINF:-1 tvg-id="outdoor" tvg-name="Outdoor",Outdoor
+udp://@232.2.3.55:5002
+
+#EXTINF:-1 tvg-id="viasat-nature" tvg-name="Viasat Nature",Viasat Nature
+http://192.168.40.87:4022/udp/232.2.203.158:5003
+
+#EXTINF:-1 tvg-id="viasat-explore" tvg-name="Viasat Explore",Viasat Explore
+http://192.168.40.87:4022/udp/232.2.203.159:5003
+
+#EXTINF:-1 tvg-id="travelxp-hd" tvg-name="Travelxp HD",Travelxp HD
+http://192.168.40.87:4022/udp/232.4.203.155:5003
+
+#EXTINF:-1 tvg-id="travelxp-4k" tvg-name="Travelxp 4K",Travelxp 4K
+udp://@232.2.3.153:5002
+
+#EXTINF:-1 tvg-id="wild-tv" tvg-name="Wild TV",Wild TV
+udp://@232.2.6.9:5002
+
+#EXTINF:-1 tvg-id="curiosity-channel" tvg-name="Curiosity Channel",Curiosity Channel
+http://192.168.40.87:4022/udp/232.2.202.146:5003
+
+#EXTINF:-1 tvg-id="kitchen-tv" tvg-name="Kitchen TV",Kitchen TV
+http://192.168.40.87:4022/udp/232.2.202.147:5003
+
+#EXTINF:-1 tvg-id="h2-sd" tvg-name="H2 SD",H2 SD
+http://192.168.40.87:4022/udp/232.2.203.18:5003
+
+#EXTINF:-1 tvg-id="fox" tvg-name="FOX",FOX
+http://192.168.40.87:4022/udp/232.2.203.138:5003
+
+#EXTINF:-1 tvg-id="cinestar-premiere-1" tvg-name="Cinestar Premiere 1",Cinestar Premiere 1
+udp://@232.4.212.128:5003
+
+#EXTINF:-1 tvg-id="fox-life" tvg-name="FOX Life",FOX Life
+http://192.168.40.87:4022/udp/232.2.203.131:5003
+
+#EXTINF:-1 tvg-id="cinestar-premiere-2" tvg-name="Cinestar Premiere 2",Cinestar Premiere 2
+http://192.168.40.87:4022/udp/232.4.212.129:5003
+
+#EXTINF:-1 tvg-id="fox-crime" tvg-name="FOX Crime",FOX Crime
+http://192.168.40.87:4022/udp/232.2.203.130:5003
+
+#EXTINF:-1 tvg-id="fox-movies" tvg-name="FOX Movies",FOX Movies
+http://192.168.40.87:4022/udp/232.2.203.132:5003
+
+#EXTINF:-1 tvg-id="tv-1000" tvg-name="TV 1000",TV 1000
+http://192.168.40.87:4022/udp/232.4.202.1:5003
+
+#EXTINF:-1 tvg-id="kino" tvg-name="Kino",Kino
+http://192.168.40.87:4022/udp/232.2.203.144:5003
+
+#EXTINF:-1 tvg-id="brio" tvg-name="Brio",Brio
+http://192.168.40.87:4022/udp/232.2.203.143:5003
+
+#EXTINF:-1 tvg-id="cinestar-tv-1" tvg-name="Cinestar TV 1",Cinestar TV 1
+http://192.168.40.87:4022/udp/232.2.202.143:5003
+
+#EXTINF:-1 tvg-id="cinestar-tv-action-thriller" tvg-name="CineStar TV Action & Thriller",CineStar TV Action & Thriller
+http://192.168.40.87:4022/udp/232.4.2.143:5002
+
+#EXTINF:-1 tvg-id="cinestar-fantasy" tvg-name="CineStar Fantasy",CineStar Fantasy
+udp://@232.4.3.164:5002
+
+#EXTINF:-1 tvg-id="cinestar-tv-2" tvg-name="CineStar TV 2",CineStar TV 2
+udp://@232.4.3.163:5002
+
+#EXTINF:-1 tvg-id="axn" tvg-name="AXN",AXN
+http://192.168.40.87:4022/udp/232.4.202.13:5003
+
+#EXTINF:-1 tvg-id="axn-spin" tvg-name="AXN Spin",AXN Spin
+udp://@232.2.3.27:5002
+
+#EXTINF:-1 tvg-id="klasik-tv" tvg-name="Klasik TV",Klasik TV
+udp://@232.2.2.15:5002
+
+#EXTINF:-1 tvg-id="amc" tvg-name="AMC",AMC
+http://192.168.40.87:4022/udp/232.2.202.131:5003
+
+#EXTINF:-1 tvg-id="diva" tvg-name="Diva",Diva
+udp://@232.4.3.1:5002
+
+#EXTINF:-1 tvg-id="epic-drama" tvg-name="Epic Drama",Epic Drama
+udp://@232.2.2.132:5002
+
+#EXTINF:-1 tvg-id="scifi" tvg-name="SciFi",SciFi
+http://192.168.40.87:4022/udp/232.2.202.60:5003
+
+#EXTINF:-1 tvg-id="hbo" tvg-name="HBO",HBO
+http://192.168.40.87:4022/udp/232.2.205.5:5003
+
+#EXTINF:-1 tvg-id="hbo-2" tvg-name="HBO 2",HBO 2
+udp://@232.4.205.6:5003
+
+#EXTINF:-1 tvg-id="hbo3" tvg-name="HBO3",HBO3
+udp://@232.2.5.10:5002
+
+#EXTINF:-1 tvg-id="pickbox-slo" tvg-name="Pickbox SLO",Pickbox SLO
+udp://@232.4.2.145:5002
+
+#EXTINF:-1 tvg-id="cinemax-2-sd" tvg-name="Cinemax 2 SD",Cinemax 2 SD
+http://192.168.40.87:4022/udp/232.4.205.4:5003
+
+#EXTINF:-1 tvg-id="24kitchen" tvg-name="24Kitchen",24Kitchen
+http://192.168.40.87:4022/udp/232.2.203.133:5003
+
+#EXTINF:-1 tvg-id="e" tvg-name="E!",E!
+http://192.168.40.87:4022/udp/232.2.203.20:5003
+
+#EXTINF:-1 tvg-id="ginx" tvg-name="Ginx",Ginx
+udp://@232.4.3.56:5002
+
+#EXTINF:-1 tvg-id="fashion-tv" tvg-name="Fashion TV",Fashion TV
+udp://@232.4.3.30:5002
+
+#EXTINF:-1 tvg-id="fashion" tvg-name="Fashion",Fashion
+udp://@232.4.3.49:5002
+
+#EXTINF:-1 tvg-id="fashiontv-4k" tvg-name="FashionTV 4K",FashionTV 4K
+udp://@232.2.3.154:5002
+
+#EXTINF:-1 tvg-id="dr-fit" tvg-name="Dr. Fit",Dr. Fit
+udp://@232.4.3.148:5002
+
+#EXTINF:-1 tvg-id="woman" tvg-name="Woman",Woman
+udp://@232.4.3.147:5002
+
+#EXTINF:-1 tvg-id="arte" tvg-name="Arte",Arte
+udp://@232.2.1.43:5002
+
+#EXTINF:-1 tvg-id="rtl" tvg-name="RTL",RTL
+http://192.168.40.87:4022/udp/232.2.202.34:5003
+
+#EXTINF:-1 tvg-id="rtl-2" tvg-name="RTL 2",RTL 2
+http://192.168.40.87:4022/udp/232.2.2.35:5002
+
+#EXTINF:-1 tvg-id="super-rtl" tvg-name="Super RTL",Super RTL
+udp://@232.4.2.36:5002
+
+#EXTINF:-1 tvg-id="kabel-1" tvg-name="Kabel 1",Kabel 1
+udp://@232.4.2.37:5002
+
+#EXTINF:-1 tvg-id="vox" tvg-name="VOX",VOX
+udp://@232.4.3.32:5002
+
+#EXTINF:-1 tvg-id="sat-1" tvg-name="SAT 1",SAT 1
+udp://@232.4.3.34:5002
+
+#EXTINF:-1 tvg-id="pro7" tvg-name="Pro7",Pro7
+udp://@232.2.3.35:5002
+
+#EXTINF:-1 tvg-id="3sat" tvg-name="3sat",3sat
+udp://@232.4.1.45:5002
+
+#EXTINF:-1 tvg-id="n-tv" tvg-name="N-tv",N-tv
+udp://@232.4.3.33:5002
+
+#EXTINF:-1 tvg-id="tve" tvg-name="TVE",TVE
+udp://@232.4.1.32:5002
+
+#EXTINF:-1 tvg-id="tv5monde" tvg-name="TV5MONDE",TV5MONDE
+udp://@232.4.1.33:5002
+
+#EXTINF:-1 tvg-id="mediaset-italia" tvg-name="Mediaset Italia",Mediaset Italia
+udp://@232.4.3.44:5002
+
+#EXTINF:-1 tvg-id="pink-si" tvg-name="PINK SI",PINK SI
+http://192.168.40.87:4022/udp/232.4.201.61:5003
+
+#EXTINF:-1 tvg-id="ewtn" tvg-name="EWTN",EWTN
+udp://@232.4.2.31:5002
+
+#EXTINF:-1 tvg-id="pink-folk" tvg-name="Pink Folk",Pink Folk
+udp://@232.2.8.4:5002
+
+#EXTINF:-1 tvg-id="bloomberg-adria" tvg-name="Bloomberg Adria",Bloomberg Adria
+http://192.168.40.87:4022/udp/232.2.202.148:5003
+
+#EXTINF:-1 tvg-id="n1-hrva-ka" tvg-name="N1 Hrvaška",N1 Hrvaška
+udp://@232.2.3.152:5002
+
+#EXTINF:-1 tvg-id="minimax" tvg-name="Minimax",Minimax
+http://192.168.40.87:4022/udp/232.4.202.41:5003
+
+#EXTINF:-1 tvg-id="oto" tvg-name="OTO",OTO
+http://192.168.40.87:4022/udp/232.4.203.145:5003
+
+#EXTINF:-1 tvg-id="nickelodeon" tvg-name="Nickelodeon",Nickelodeon
+http://192.168.40.87:4022/udp/232.4.203.11:5003
+
+#EXTINF:-1 tvg-id="baby-tv" tvg-name="Baby TV",Baby TV
+http://192.168.40.87:4022/udp/232.4.202.12:5003
+
+#EXTINF:-1 tvg-id="cartoon-tcm" tvg-name="Cartoon / TCM",Cartoon / TCM
+http://192.168.40.87:4022/udp/232.4.202.33:5003
+
+#EXTINF:-1 tvg-id="boomerang" tvg-name="Boomerang",Boomerang
+http://192.168.40.87:4022/udp/232.4.203.6:5003
+
+#EXTINF:-1 tvg-id="jimjam" tvg-name="JimJam",JimJam
+udp://@232.4.3.3:5002
+
+#EXTINF:-1 tvg-id="disney-channel" tvg-name="Disney Channel",Disney Channel
+http://192.168.40.87:4022/udp/232.4.202.2:5003
+
+#EXTINF:-1 tvg-id="disney-xd" tvg-name="Disney XD",Disney XD
+udp://@232.4.3.4:5002
+
+#EXTINF:-1 tvg-id="nick-jr" tvg-name="Nick Jr.",Nick Jr.
+http://192.168.40.87:4022/udp/232.4.203.68:5003
+
+#EXTINF:-1 tvg-id="nicktoons" tvg-name="NickToons",NickToons
+http://192.168.40.87:4022/udp/232.2.203.42:5003
+
+#EXTINF:-1 tvg-id="pikaboo" tvg-name="Pikaboo",Pikaboo
+udp://@232.2.2.56:5002
+
+#EXTINF:-1 tvg-id="disney-junior" tvg-name="Disney Junior",Disney Junior
+udp://@232.2.3.13:5002
+
+#EXTINF:-1 tvg-id="port-tv-1" tvg-name="Šport TV 1",Šport TV 1
+http://192.168.40.87:4022/udp/232.2.202.128:5003
+
+#EXTINF:-1 tvg-id="port-tv-2" tvg-name="Šport TV 2",Šport TV 2
+http://192.168.40.87:4022/udp/232.2.203.128:5003
+
+#EXTINF:-1 tvg-id="port-tv-3" tvg-name="Šport TV 3",Šport TV 3
+http://192.168.40.87:4022/udp/232.2.203.139:5003
+
+#EXTINF:-1 tvg-id="arena-sport-1" tvg-name="Arena Sport 1",Arena Sport 1
+http://192.168.40.87:4022/udp/232.2.202.137:5003
+
+#EXTINF:-1 tvg-id="arena-sport-2" tvg-name="Arena Sport 2",Arena Sport 2
+http://192.168.40.87:4022/udp/232.2.202.138:5003
+
+#EXTINF:-1 tvg-id="arena-esport" tvg-name="Arena eSport",Arena eSport
+http://192.168.40.87:4022/udp/232.2.202.139:5003
+
+#EXTINF:-1 tvg-id="arena-sport-3" tvg-name="Arena Sport 3",Arena Sport 3
+udp://@232.4.3.165:5002
+
+#EXTINF:-1 tvg-id="eurosport" tvg-name="Eurosport",Eurosport
+http://192.168.40.87:4022/udp/232.2.206.4:5003
+
+#EXTINF:-1 tvg-id="eurosport-2" tvg-name="Eurosport 2",Eurosport 2
+http://192.168.40.87:4022/udp/232.2.206.12:5003
+
+#EXTINF:-1 tvg-id="eurosport-4k" tvg-name="Eurosport 4K",Eurosport 4K
+udp://@232.2.2.133:5002
+
+#EXTINF:-1 tvg-id="nautical-channel" tvg-name="Nautical Channel",Nautical Channel
+udp://@232.2.4.2:5002
+
+#EXTINF:-1 tvg-id="extreme-tv" tvg-name="Extreme TV",Extreme TV
+udp://@232.2.3.22:5002
+
+#EXTINF:-1 tvg-id="sport1" tvg-name="Sport1",Sport1
+udp://@232.2.2.3:5002
+
+#EXTINF:-1 tvg-id="motorvision-tv" tvg-name="Motorvision TV",Motorvision TV
+udp://@232.4.3.57:5002
+
+#EXTINF:-1 tvg-id="sport-klub-1" tvg-name="Sport Klub 1",Sport Klub 1
+udp://@232.2.3.135:5002
+
+#EXTINF:-1 tvg-id="sport-klub-2" tvg-name="Sport Klub 2",Sport Klub 2
+udp://@232.2.3.136:5002
+
+#EXTINF:-1 tvg-id="sport-klub-3" tvg-name="Sport Klub 3",Sport Klub 3
+udp://@232.2.3.137:5002
+
+#EXTINF:-1 tvg-id="sport-klub-4" tvg-name="Sport Klub 4",Sport Klub 4
+udp://@232.4.3.63:5002
+
+#EXTINF:-1 tvg-id="sport-klub-5" tvg-name="Sport Klub 5",Sport Klub 5
+udp://@232.4.3.64:5002
+
+#EXTINF:-1 tvg-id="sport-klub-6" tvg-name="Sport Klub 6",Sport Klub 6
+udp://@232.4.3.65:5002
+
+#EXTINF:-1 tvg-id="sport-klub-golf" tvg-name="Sport Klub Golf",Sport Klub Golf
+udp://@232.2.3.151:5002
+
+#EXTINF:-1 tvg-id="fight-channel-world" tvg-name="Fight Channel World",Fight Channel World
+udp://@232.2.4.128:5002
+
+#EXTINF:-1 tvg-id="trace-sports-inter" tvg-name="Trace Sports Inter",Trace Sports Inter
+udp://@232.2.4.17:5002
+
+#EXTINF:-1 tvg-id="arena-sport-3" tvg-name="Arena Sport 3",Arena Sport 3
+udp://@232.2.3.165:5002
+
+#EXTINF:-1 tvg-id="arena-sport-4" tvg-name="Arena Sport 4",Arena Sport 4
+udp://@232.2.3.166:5002
+
+#EXTINF:-1 tvg-id="mtv-hd" tvg-name="MTV HD",MTV HD
+http://192.168.40.87:4022/udp/232.4.203.51:5003
+
+#EXTINF:-1 tvg-id="vh1" tvg-name="VH1",VH1
+http://192.168.40.87:4022/udp/232.4.202.14:5003
+
+#EXTINF:-1 tvg-id="klape-i-tambure-tv" tvg-name="Klape i tambure TV",Klape i tambure TV
+udp://@232.4.2.71:5002
+
+#EXTINF:-1 tvg-id="cmc" tvg-name="CMC",CMC
+http://192.168.40.87:4022/udp/232.2.202.136:5003
+
+#EXTINF:-1 tvg-id="jugoton" tvg-name="Jugoton",Jugoton
+http://192.168.40.87:4022/udp/232.4.203.60:5003
+
+#EXTINF:-1 tvg-id="club-mtv" tvg-name="Club MTV",Club MTV
+http://192.168.40.87:4022/udp/232.4.203.7:5003
+
+#EXTINF:-1 tvg-id="mtv-hits" tvg-name="MTV Hits",MTV Hits
+http://192.168.40.87:4022/udp/232.4.203.9:5003
+
+#EXTINF:-1 tvg-id="mtv-rocks" tvg-name="MTV Rocks",MTV Rocks
+http://192.168.40.87:4022/udp/232.4.203.8:5003
+
+#EXTINF:-1 tvg-id="vh1-classics" tvg-name="VH1 Classics",VH1 Classics
+http://192.168.40.87:4022/udp/232.4.203.10:5003
+
+#EXTINF:-1 tvg-id="mezzo" tvg-name="Mezzo",Mezzo
+http://192.168.40.87:4022/udp/232.4.203.41:5003
+
+#EXTINF:-1 tvg-id="dm-sat" tvg-name="DM SAT",DM SAT
+udp://@232.4.3.25:5002
+
+#EXTINF:-1 tvg-id="grand-1" tvg-name="Grand 1",Grand 1
+udp://@232.2.2.53:5002
+
+#EXTINF:-1 tvg-id="grand-2" tvg-name="Grand 2",Grand 2
+udp://@232.2.2.54:5002
+
+#EXTINF:-1 tvg-id="trace-urban" tvg-name="Trace Urban",Trace Urban
+udp://@232.2.4.18:5002
+
+#EXTINF:-1 tvg-id="one-adria" tvg-name="One Adria",One Adria
+udp://@232.4.1.172:5002
+
+#EXTINF:-1 tvg-id="adria" tvg-name="Adria",Adria
+udp://@232.4.1.171:5002
+
+#EXTINF:-1 tvg-id="mtv-live" tvg-name="MTV Live",MTV Live
+udp://@232.4.3.51:5002
+
+#EXTINF:-1 tvg-id="mtv-90s" tvg-name="MTV 90s",MTV 90s
+udp://@232.2.3.8:5002
+
+#EXTINF:-1 tvg-id="mtv-80s" tvg-name="MTV 80s",MTV 80s
+udp://@232.2.3.10:5002
+
+#EXTINF:-1 tvg-id="tv-golica" tvg-name="TV Golica",TV Golica
+http://192.168.40.87:4022/udp/232.4.1.161:5002
+
+#EXTINF:-1 tvg-id="canale-20" tvg-name="Canale 20",Canale 20
+udp://@232.4.14.15:5002
+
+#EXTINF:-1 tvg-id="tr-i-tv" tvg-name="Tržič TV",Tržič TV
+udp://@232.4.1.140:5002
+
+#EXTINF:-1 tvg-id="tv-veseljak" tvg-name="TV Veseljak",TV Veseljak
+http://192.168.40.87:4022/udp/232.4.201.13:5003
+
+#EXTINF:-1 tvg-id="arli-tv" tvg-name="Čarli TV",Čarli TV
+udp://@232.4.1.10:5002
+
+#EXTINF:-1 tvg-id="tv8" tvg-name="Tv8",Tv8
+udp://@232.4.1.83:5002
+
+#EXTINF:-1 tvg-id="boom-tv" tvg-name="BOOM TV",BOOM TV
+http://192.168.40.87:4022/udp/232.4.1.162:5002
+
+#EXTINF:-1 tvg-id="net-tv" tvg-name="NET TV",NET TV
+http://192.168.40.87:4022/udp/232.4.201.14:5003
+
+#EXTINF:-1 tvg-id="va-kanal" tvg-name="Vaš kanal",Vaš kanal
+udp://@232.4.1.20:5002
+
+#EXTINF:-1 tvg-id="vitel" tvg-name="Vitel",Vitel
+udp://@232.4.1.35:5002
+
+#EXTINF:-1 tvg-id="ptujska-tv" tvg-name="Ptujska TV",Ptujska TV
+udp://@232.4.1.50:5002
+
+#EXTINF:-1 tvg-id="sip-tv" tvg-name="SIP TV",SIP TV
+udp://@232.4.1.38:5002
+
+#EXTINF:-1 tvg-id="tv-as" tvg-name="TV As",TV As
+udp://@232.4.1.39:5002
+
+#EXTINF:-1 tvg-id="rts-maribor" tvg-name="RTS Maribor",RTS Maribor
+udp://@232.4.1.15:5002
+
+#EXTINF:-1 tvg-id="vtv" tvg-name="VTV",VTV
+udp://@232.4.1.17:5002
+
+#EXTINF:-1 tvg-id="bk-tv" tvg-name="BK TV",BK TV
+udp://@232.4.1.58:5002
+
+#EXTINF:-1 tvg-id="tv-celje" tvg-name="TV Celje",TV Celje
+udp://@232.4.1.46:5002
+
+#EXTINF:-1 tvg-id="kanal-10-idea-tv" tvg-name="Kanal 10 / Idea TV",Kanal 10 / Idea TV
+udp://@232.4.1.92:5002
+
+#EXTINF:-1 tvg-id="tv-galeja" tvg-name="TV Galeja",TV Galeja
+udp://@232.4.1.82:5002
+
+#EXTINF:-1 tvg-id="ansat-tv" tvg-name="Ansat TV",Ansat TV
+udp://@232.4.1.128:5002
+
+#EXTINF:-1 tvg-id="exodus-tv" tvg-name="Exodus TV",Exodus TV
+udp://@232.4.1.59:5002
+
+#EXTINF:-1 tvg-id="koro-ka-tv" tvg-name="KOROŠKA TV",KOROŠKA TV
+udp://@232.2.1.73:5002
+
+#EXTINF:-1 tvg-id="atm-tv-kranjska-gora" tvg-name="ATM TV Kranjska Gora",ATM TV Kranjska Gora
+udp://@232.4.1.64:5002
+
+#EXTINF:-1 tvg-id="r-kanal" tvg-name="R Kanal+",R Kanal+
+udp://@232.4.1.65:5002
+
+#EXTINF:-1 tvg-id="s-tv-skledar" tvg-name="S-TV Skledar",S-TV Skledar
+udp://@232.4.1.67:5002
+
+#EXTINF:-1 tvg-id="tv-nakupi" tvg-name="TV nakupi",TV nakupi
+udp://@232.4.1.133:5002
+
+#EXTINF:-1 tvg-id="ljubljana-tv" tvg-name="Ljubljana TV",Ljubljana TV
+udp://@232.4.1.136:5002
+
+#EXTINF:-1 tvg-id="v-ivo-si" tvg-name="VŽIVO.si",VŽIVO.si
+udp://@232.4.1.69:5002
+
+#EXTINF:-1 tvg-id="tv-sg" tvg-name="TV SG",TV SG
+udp://@232.4.1.70:5002
+
+#EXTINF:-1 tvg-id="arena-tv" tvg-name="Arena TV",Arena TV
+udp://@232.4.1.93:5002
+
+#EXTINF:-1 tvg-id="oron-tv" tvg-name="Oron TV",Oron TV
+udp://@232.4.1.62:5002
+
+#EXTINF:-1 tvg-id="tv-ormo" tvg-name="Tv Ormož",Tv Ormož
+udp://@232.4.1.72:5002
+
+#EXTINF:-1 tvg-id="go-tv" tvg-name="GO TV",GO TV
+udp://@232.4.1.76:5002
+
+#EXTINF:-1 tvg-id="tv-beltinci" tvg-name="TV Beltinci",TV Beltinci
+udp://@232.2.1.77:5002
+
+#EXTINF:-1 tvg-id="savinjska-tv" tvg-name="Savinjska TV",Savinjska TV
+udp://@232.4.1.75:5002
+
+#EXTINF:-1 tvg-id="tv-vascom" tvg-name="TV Vascom",TV Vascom
+udp://@232.4.1.88:5002
+
+#EXTINF:-1 tvg-id="etv-hd" tvg-name="ETV HD",ETV HD
+udp://@232.2.7.2:5002
+
+#EXTINF:-1 tvg-id="tv-miklav" tvg-name="TV Miklavž",TV Miklavž
+udp://@232.4.1.159:5002
+
+#EXTINF:-1 tvg-id="tv-slo-3" tvg-name="TV SLO 3",TV SLO 3
+http://192.168.40.87:4022/udp/232.2.201.89:5003
+
+#EXTINF:-1 tvg-id="tv-koper-capodistria" tvg-name="TV Koper Capodistria",TV Koper Capodistria
+udp://@232.2.1.141:5002
+
+#EXTINF:-1 tvg-id="tele-maribor" tvg-name="Tele Maribor",Tele Maribor
+udp://@232.2.1.142:5002
+
+#EXTINF:-1 tvg-id="hrt-1" tvg-name="HRT 1",HRT 1
+udp://@232.9.1.148:5002
+
+#EXTINF:-1 tvg-id="hrt-2" tvg-name="HRT 2",HRT 2
+udp://@232.9.1.149:5002
+
+#EXTINF:-1 tvg-id="hrt-3" tvg-name="HRT 3",HRT 3
+udp://@232.9.1.150:5002
+
+#EXTINF:-1 tvg-id="obn" tvg-name="OBN",OBN
+udp://@232.4.3.48:5002
+
+#EXTINF:-1 tvg-id="rt-srbija" tvg-name="RT Srbija",RT Srbija
+http://192.168.40.87:4022/udp/232.4.201.22:5003
+
+#EXTINF:-1 tvg-id="rt-crna-gora" tvg-name="RT Crna gora",RT Crna gora
+udp://@232.4.1.23:5002
+
+#EXTINF:-1 tvg-id="rtk" tvg-name="RTK",RTK
+udp://@232.4.1.24:5002
+
+#EXTINF:-1 tvg-id="al-jazeera-balkans" tvg-name="Al Jazeera Balkans",Al Jazeera Balkans
+http://192.168.40.87:4022/udp/232.4.201.60:5003
+
+#EXTINF:-1 tvg-id="hayat" tvg-name="Hayat",Hayat
+http://192.168.40.87:4022/udp/232.4.201.21:5003
+
+#EXTINF:-1 tvg-id="elta-tv" tvg-name="ELTA TV",ELTA TV
+udp://@232.4.1.52:5002
+
+#EXTINF:-1 tvg-id="bn-tv" tvg-name="BN TV",BN TV
+udp://@232.2.3.26:5002
+
+#EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
+udp://@232.4.2.5:5002
+
+#EXTINF:-1 tvg-id="bbc-world" tvg-name="BBC World",BBC World
+udp://@232.4.2.7:5002
+
+#EXTINF:-1 tvg-id="sky-news" tvg-name="Sky News",Sky News
+udp://@232.4.2.32:5002
+
+#EXTINF:-1 tvg-id="fox-news" tvg-name="Fox News",Fox News
+http://192.168.40.87:4022/udp/232.2.201.165:5003
+
+#EXTINF:-1 tvg-id="france-24" tvg-name="France 24",France 24
+udp://@232.4.2.6:5002
+
+#EXTINF:-1 tvg-id="zdf" tvg-name="ZDF",ZDF
+udp://@232.4.1.34:5002
+
+#EXTINF:-1 tvg-id="ard" tvg-name="ARD",ARD
+udp://@232.4.1.11:5002
+
+#EXTINF:-1 tvg-id="channel-one-russia" tvg-name="Channel One Russia",Channel One Russia
+udp://@232.2.2.39:5002
+
+#EXTINF:-1 tvg-id="russia-today" tvg-name="Russia Today",Russia Today
+udp://@232.4.2.43:5002
+
+#EXTINF:-1 tvg-id="orf-1" tvg-name="ORF 1",ORF 1
+udp://@232.2.1.152:5002
+
+#EXTINF:-1 tvg-id="orf-2" tvg-name="ORF 2",ORF 2
+udp://@232.2.1.153:5002
+
+#EXTINF:-1 tvg-id="rai-1" tvg-name="RAI 1",RAI 1
+udp://@232.2.1.147:5002
+
+#EXTINF:-1 tvg-id="rai-2" tvg-name="RAI 2",RAI 2
+udp://@232.4.1.29:5002
+
+#EXTINF:-1 tvg-id="rai-3" tvg-name="RAI 3",RAI 3
+udp://@232.4.1.30:5002
+
+#EXTINF:-1 tvg-id="duna-tv" tvg-name="Duna TV",Duna TV
+udp://@232.4.1.44:5002
+
+#EXTINF:-1 tvg-id="shutel-tv" tvg-name="Shutel TV",Shutel TV
+udp://@232.4.3.62:5002
+
+#EXTINF:-1 tvg-id="bht1" tvg-name="BHT1",BHT1
+udp://@232.4.11.13:5002
+
+#EXTINF:-1 tvg-id="rtl-kockica-innet" tvg-name="RTL Kockica INnet",RTL Kockica INnet
+udp://@232.2.11.130:5002
+
+#EXTINF:-1 tvg-id="balkan-trip" tvg-name="Balkan Trip",Balkan Trip
+udp://@232.4.2.140:5002
+
+#EXTINF:-1 tvg-id="rete-4" tvg-name="Rete 4",Rete 4
+http://192.168.40.87:4022/udp/232.2.214.129:5003
+
+#EXTINF:-1 tvg-id="rtl-hrva-ka" tvg-name="RTL Hrvaška",RTL Hrvaška
+udp://@232.2.11.128:5002
+
+#EXTINF:-1 tvg-id="rtl-2-hrva-ka" tvg-name="RTL 2 Hrvaška",RTL 2 Hrvaška
+udp://@232.2.11.129:5002
+
+#EXTINF:-1 tvg-id="rtl-living" tvg-name="RTL Living",RTL Living
+udp://@232.4.11.21:5002
+
+#EXTINF:-1 tvg-id="pink-reality-sd" tvg-name="Pink Reality SD",Pink Reality SD
+udp://@232.4.8.11:5002
+
+#EXTINF:-1 tvg-id="hrt-4" tvg-name="HRT 4",HRT 4
+udp://@232.2.1.151:5002
+
+#EXTINF:-1 tvg-id="rtcg2" tvg-name="RTCG2",RTCG2
+udp://@232.4.11.131:5002
+
+#EXTINF:-1 tvg-id="rts-svet" tvg-name="RTS Svet",RTS Svet
+udp://@232.4.1.22:5002
+
+#EXTINF:-1 tvg-id="zdrava-tv" tvg-name="Zdrava TV",Zdrava TV
+udp://@232.4.1.174:5002
+
+#EXTINF:-1 tvg-id="nova-tv" tvg-name="Nova TV",Nova TV
+udp://@232.9.14.131:5002
+
+#EXTINF:-1 tvg-id="doma-tv" tvg-name="Doma TV",Doma TV
+udp://@232.9.14.132:5002
+
+#EXTINF:-1 tvg-id="playboy-tv" tvg-name="Playboy TV",Playboy TV
+udp://@232.2.3.161:5002
+
+#EXTINF:-1 tvg-id="reality-kings" tvg-name="Reality Kings",Reality Kings
+udp://@232.2.4.22:5002
+
+#EXTINF:-1 tvg-id="milf-tv" tvg-name="MILF TV",MILF TV
+udp://@232.4.13.133:5002
+
+#EXTINF:-1 tvg-id="dusk-tv" tvg-name="Dusk TV",Dusk TV
+udp://@232.2.4.13:5002
+
+#EXTINF:-1 tvg-id="dorcel" tvg-name="Dorcel",Dorcel
+udp://@232.2.4.15:5002
+
+#EXTINF:-1 tvg-id="hustler" tvg-name="Hustler",Hustler
+udp://@232.2.4.9:5002
+
+#EXTINF:-1 tvg-id="vivid-red" tvg-name="Vivid Red",Vivid Red
+udp://@232.2.4.8:5002
+
+#EXTINF:-1 tvg-id="private-tv" tvg-name="Private TV",Private TV
+udp://@232.2.4.10:5002
+
+#EXTINF:-1 tvg-id="pinko-club" tvg-name="Pinko club",Pinko club
+udp://@232.4.3.36:5002
+
+#EXTINF:-1 tvg-id="emanuelle" tvg-name="Emanuelle",Emanuelle
+udp://@232.2.2.51:5002
+
+#EXTINF:-1 tvg-id="hustler" tvg-name="Hustler",Hustler
+udp://@232.2.6.10:5002
+
+#EXTINF:-1 tvg-id="balkan-erotic" tvg-name="Balkan Erotic",Balkan Erotic
+udp://@232.4.13.128:5002
+
+#EXTINF:-1 tvg-id="hot-pleasure" tvg-name="Hot Pleasure",Hot Pleasure
+udp://@232.4.13.129:5002
+
+#EXTINF:-1 tvg-id="extreme" tvg-name="Extreme",Extreme
+udp://@232.4.13.130:5002
+
+#EXTINF:-1 tvg-id="red-xxx" tvg-name="RED XXX",RED XXX
+udp://@232.4.13.132:5002
+
+#EXTINF:-1 tvg-id="playhouse" tvg-name="PLAYHOUSE",PLAYHOUSE
+udp://@232.4.13.134:5002
+
+#EXTINF:-1 tvg-id="redlight" tvg-name="RedLight",RedLight
+udp://@232.4.4.3:5002
+
+#EXTINF:-1 tvg-id="sexation" tvg-name="Sexation",Sexation
+udp://@232.4.2.50:5002
+
+#EXTINF:-1 tvg-id="brazzers" tvg-name="Brazzers",Brazzers
+udp://@232.2.4.4:5002
+
+#EXTINF:-1 tvg-id="vivid-touch-sd" tvg-name="Vivid touch SD",Vivid touch SD
+udp://@232.4.2.73:5002
+
+#EXTINF:-1 tvg-id="neo-promo" tvg-name="NEO promo",NEO promo
+udp://@232.4.1.51:5002
+
+#EXTINF:-1 tvg-id="ts-vod" tvg-name="TS VoD",TS VoD
+udp://@232.2.1.146:5002
+
+#EXTINF:-1 tvg-id="morska-obala" tvg-name="Morska obala",Morska obala
+udp://@232.2.1.157:5002
+
+#EXTINF:-1 tvg-id="tropski-podvodni-svet" tvg-name="Tropski podvodni svet",Tropski podvodni svet
+udp://@232.2.1.155:5002
+
+#EXTINF:-1 tvg-id="kamin" tvg-name="KAMIN",KAMIN
+udp://@232.2.1.143:5002
+
