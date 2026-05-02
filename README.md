@@ -1,6 +1,6 @@
 # NEO EPG Generator
 
-Converts Telekom Slovenije's NEO TV EPG data to [XMLTV](https://wiki.xmltv.org/) format, ready for use with media c
+Converts Telekom Slovenije's NEO TV EPG data to [XMLTV](https://wiki.xmltv.org/) format, ready for use with Jellyfin and other media servers.
 
 ## Features
 
@@ -13,3 +13,5 @@ Converts Telekom Slovenije's NEO TV EPG data to [XMLTV](https://wiki.xmltv.org/)
 ```bash
 uv run NeoEpgGrabber.py --ids channel_ids.txt --output epg.xmltv
 ```
+
+https://overlordtm.github.io/NeoEpg2Xmltv/epg.xmltv

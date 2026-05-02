@@ -183,11 +183,15 @@ def generate_epg(channel_ids: list[str], output_file: str):
         generator_info_name='neo-epg-generator',
     )
 
+    failed_info: list[str] = []
+    no_programs: list[str] = []
+
     for ch_id in channel_ids:
         logger.info(f"Processing channel: {ch_id}")
 
         channel_info = fetch_channel_info(ch_id)
         if not channel_info:
+            failed_info.append(ch_id)
             continue
         channel_meta = convert_channel_metadata(channel_info)
         writer.addChannel(channel_meta)
@@ -195,6 +199,8 @@ def generate_epg(channel_ids: list[str], output_file: str):
 
         programs = fetch_programs(ch_id, from_ts, to_ts)
         logger.info(f"  Found {len(programs)} programs")
+        if not programs:
+            no_programs.append(ch_id)
 
         for prog in programs:
             try:
@@ -206,6 +212,11 @@ def generate_epg(channel_ids: list[str], output_file: str):
 
     writer.write(output_file, pretty_print=True)
     logger.info(f"EPG written to {output_file}")
+
+    if failed_info:
+        logger.warning(f"Failed to fetch channel info ({len(failed_info)}): {', '.join(failed_info)}")
+    if no_programs:
+        logger.info(f"No programs returned ({len(no_programs)}): {', '.join(no_programs)}")
 
 
 def main():
