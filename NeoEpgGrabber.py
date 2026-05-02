@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
 
-import requests
-import json
 import time
-import calendar
 import logging
 import argparse
 from pathlib import Path
-from datetime import datetime, time as dt_time
-from typing import List, Dict, Any
-import xmltv_alt  # Ensure this is installed: pip install xmltv-alt
+from datetime import datetime
 
-# Setup logging
+import requests
+import xmltv_alt
+
 logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -19,7 +16,7 @@ API_BASE_URL = "https://stargate.telekom.si/api/titan.tv"
 
 # Maps Slovenian API genres to Jellyfin-recognised English XMLTV categories.
 # Only genres with a clear match are listed; unmapped genres are kept SL-only.
-SL_TO_EN_CATEGORY: Dict[str, str] = {
+SL_TO_EN_CATEGORY: dict[str, str] = {
     # Movie
     'akcija': 'Movie',
     'animirani': 'Movie',
@@ -90,6 +87,7 @@ SL_TO_EN_CATEGORY: Dict[str, str] = {
     'življenjski slog': 'Documentary',
     'znanost': 'Documentary',
 }
+
 HEADERS = {
     'accept': 'application/json, text/plain, */*',
     'accept-language': 'sl-SI,sl;q=0.9,en-GB;q=0.8,en;q=0.7',
@@ -109,13 +107,13 @@ HEADERS = {
 }
 
 
-def load_channel_ids(path: str) -> List[str]:
-    with open(path, 'r', encoding='utf-8') as f:
+def load_channel_ids(path: str) -> list[str]:
+    with open(path, encoding='utf-8') as f:
         ids = [line.strip() for line in f if line.strip()]
-    return list(dict.fromkeys(ids))  # Remove duplicates
+    return list(dict.fromkeys(ids))
 
 
-def fetch_channel_info(channel_id: str) -> Dict[str, Any]:
+def fetch_channel_info(channel_id: str) -> dict:
     payload = {'channel_id': channel_id, 'timeshift': 0}
     try:
         response = requests.post(f"{API_BASE_URL}.ContentService/EpgContentDetails", headers=HEADERS, json=payload)
@@ -126,7 +124,7 @@ def fetch_channel_info(channel_id: str) -> Dict[str, Any]:
         return {}
 
 
-def fetch_programs(channel_id: str, from_ts: int, to_ts: int) -> List[Dict[str, Any]]:
+def fetch_programs(channel_id: str, from_ts: int, to_ts: int) -> list[dict]:
     payload = {'ch_ext_id': channel_id, 'from': from_ts, 'to': to_ts}
     try:
         response = requests.post(f"{API_BASE_URL}.WebEpg/GetWebEpgData", headers=HEADERS, json=payload)
@@ -137,20 +135,20 @@ def fetch_programs(channel_id: str, from_ts: int, to_ts: int) -> List[Dict[str, 
         return []
 
 
-def convert_channel_metadata(data: Dict[str, Any]) -> Dict[str, Any]:
+def convert_channel_metadata(data: dict) -> dict:
     return {
         'id': data.pop('channel_friendly_name'),
         'display-name': [(data.pop('channel_name'), 'sl')],
-        'icon': [{'src': data.pop('channel_logo')}]
+        'icon': [{'src': data.pop('channel_logo')}],
     }
 
 
-def convert_program_metadata(data: Dict[str, Any], channel_id: str, tz_offset: str) -> Dict[str, Any]:
+def convert_program_metadata(data: dict, channel_id: str, tz_offset: str) -> dict:
     start = datetime.fromtimestamp(data.pop('show_start')).strftime('%Y%m%d%H%M%S') + f' {tz_offset}'
     stop = datetime.fromtimestamp(data.pop('show_end')).strftime('%Y%m%d%H%M%S') + f' {tz_offset}'
     genres = data.pop('genres', [])
     categories = []
-    en_seen: set = set()
+    en_seen = set()
     for genre in genres:
         categories.append((genre, 'sl'))
         en = SL_TO_EN_CATEGORY.get(genre)
@@ -164,16 +162,16 @@ def convert_program_metadata(data: Dict[str, Any], channel_id: str, tz_offset: s
         'stop': stop,
         'icon': [{'src': data.pop('thumbnail')}],
         'category': categories,
-        'desc': [(data.pop('summary', ''), 'sl')]
+        'desc': [(data.pop('summary', ''), 'sl')],
     }
 
 
-def generate_epg(channel_ids: List[str], output_file: str):
-    now = datetime.now()
-    midnight = datetime.combine(now, dt_time.min)
-    from_ts = calendar.timegm(midnight.timetuple())
+def generate_epg(channel_ids: list[str], output_file: str):
+    now = datetime.now().astimezone()
+    midnight = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    from_ts = int(midnight.timestamp())
     to_ts = from_ts + 7 * 24 * 3600 - 1
-    tz_offset = now.strftime('%z') or '+0200'
+    tz_offset = now.strftime('%z')
     timestamp_str = now.strftime('%Y%m%d%H%M%S') + f' {tz_offset}'
 
     writer = xmltv_alt.Writer(
@@ -182,7 +180,7 @@ def generate_epg(channel_ids: List[str], output_file: str):
         source_info_url='https://neo.io/',
         source_info_name='NEO',
         generator_info_url='',
-        generator_info_name='neo-epg-generator'
+        generator_info_name='neo-epg-generator',
     )
 
     for ch_id in channel_ids:
@@ -204,7 +202,7 @@ def generate_epg(channel_ids: List[str], output_file: str):
             except Exception as e:
                 logger.warning(f"  Skipping invalid program: {e}")
 
-        time.sleep(0.2)  # avoid hammering the API
+        time.sleep(0.2)
 
     writer.write(output_file, pretty_print=True)
     logger.info(f"EPG written to {output_file}")
@@ -226,4 +224,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
